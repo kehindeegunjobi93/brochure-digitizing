@@ -1,0 +1,99 @@
+.brochure-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #495057;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #667eea;
+}
+
+.section-content {
+  margin-bottom: 2rem;
+}
+
+.section-content h4 {
+  color: #495057;
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.content-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.content-item {
+  background: #f8f9fa;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border-left: 4px solid #667eea;
+  color: #495057;
+  line-height: 1.5;
+}
+
+.interactive-section {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+}
+
+.interactive-section h4 {
+  color: #495057;
+  font-size: 1.2rem;
+  margin: 0 0 1rem 0;
+  font-weight: 600;
+}
+
+.symptom-instruction {
+  color: #6c757d;
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.todo-list,
+.symptom-list,
+.appointment-list,
+.milestone-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.milestone-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.milestone-timeframe {
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-style: italic;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .brochure-section {
+    max-width: 100%;
+  }
+  
+  .interactive-section {
+    padding: 1rem;
+  }
+  
+  .milestone-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}

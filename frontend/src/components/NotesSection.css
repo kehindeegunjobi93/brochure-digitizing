@@ -1,0 +1,151 @@
+.notes-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.section-title {
+  color: #495057;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #667eea;
+}
+
+.notes-description {
+  color: #6c757d;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+.notes-container {
+  background: #f8f9fa;
+  border-radius: 10px;
+  border: 1px solid #e9ecef;
+  overflow: hidden;
+}
+
+.notes-editor {
+  padding: 1.5rem;
+}
+
+.notes-textarea {
+  width: 100%;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.3s;
+}
+
+.notes-textarea:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.notes-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: flex-end;
+}
+
+.save-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.save-button:hover {
+  background-color: #218838;
+}
+
+.cancel-button {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+.notes-display {
+  padding: 1.5rem;
+}
+
+.notes-content {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e9ecef;
+}
+
+.notes-text {
+  margin: 0;
+  color: #495057;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  font-family: inherit;
+}
+
+.notes-empty {
+  background: white;
+  border-radius: 8px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border: 2px dashed #e9ecef;
+  text-align: center;
+}
+
+.notes-empty p {
+  margin: 0;
+  color: #6c757d;
+  font-style: italic;
+}
+
+.edit-button {
+  background-color: #667eea;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #5a6fd8;
+}
+
+@media (max-width: 768px) {
+  .notes-actions {
+    flex-direction: column;
+  }
+  
+  .save-button,
+  .cancel-button,
+  .edit-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,82 @@
+.symptom-item {
+  background: white;
+  border: 2px solid #e9ecef;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: all 0.3s;
+}
+
+.symptom-item:hover {
+  border-color: #ffc107;
+  box-shadow: 0 2px 8px rgba(255, 193, 7, 0.1);
+}
+
+.symptom-item.flagged {
+  background: #fff3cd;
+  border-color: #ffc107;
+}
+
+.symptom-label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.symptom-checkbox {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #6c757d;
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.symptom-checkbox:checked {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.symptom-checkbox:checked::after {
+  content: '⚠';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #856404;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.symptom-text {
+  flex: 1;
+  color: #495057;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.symptom-flag {
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.symptom-item.flagged .symptom-flag {
+  opacity: 1;
+}
+
+.symptom-alert {
+  margin-top: 0.5rem;
+  padding: 0.5rem;
+  background: #f8d7da;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  color: #721c24;
+}
+
+.symptom-alert small {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
