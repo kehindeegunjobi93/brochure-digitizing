@@ -127,8 +127,8 @@ For a production system serving multiple hospitals and thousands of patients:
    - Blue-green deployments for zero-downtime updates
 
 ### Current Demo Deployment
-- **Frontend**: `npm start` (Development server on port 3000)
-- **Backend**: `node server-simple.js` (Express server on port 5000)
+- **Frontend**: `cd frontend && npm install && npm start` (Development server on port 3000)
+- **Backend**: `cd backend && npm install && node server-simple.js` (Express server on port 5000)
 - **Database**: In-memory storage (suitable for demo/testing)
 
 ## Patient Personalization Strategy
